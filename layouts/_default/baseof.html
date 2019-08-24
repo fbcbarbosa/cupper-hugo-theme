@@ -3,13 +3,15 @@
   {{ partial "head.html" . }}
   <body>
     <a href="#main">skip to content</a>
+    {{- range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{- end }}
     {{ partial "svg.html" . }}
     <div class="wrapper">
       {{ partial "header.html" . }}
       <div class="main-and-footer">
         <div>
           {{ block "main" . }}{{ end }}
-          {{ partial "footer.html" . }}
         </div>
       </div>
     </div>

@@ -20,7 +20,7 @@ html {
     font-family: Arial, Helvetica Neue, sans-serif;
     line-height: 1.5;
     color: #111;
-    background-color: #fefefe;
+    background-color: #f6f5f3;
 }
 template {
   display: none !important;
@@ -70,8 +70,8 @@ figure p img {
 }
 :focus:not([tabindex="-1"]),
 [data-expands]:focus svg,
-.patterns a:focus .text,
-[for="themer"] :focus + [aria-hidden] {
+.patterns a:focus-visible .text,
+[for="themer"] :focus-visible + [aria-hidden] {
     outline: 4px solid #999;
 }
 a {
@@ -407,8 +407,6 @@ caption {
   background-color: #111;
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
   color: #fefefe;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 /* Menu button */
