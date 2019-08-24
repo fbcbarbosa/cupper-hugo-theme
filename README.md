@@ -1,3 +1,11 @@
+A fork of https://github.com/zwbetz-gh/cupper-hugo-theme with minor HTLM/CSS changes. A non-extensive list:
+
+* Removed dark-theme choice
+* Displays the latest posts on Home Page
+* Used `focus-visible` css to limit outline to keyboard
+* Added support for custom CSS through params.customCSS list
+* Moved footer to nav-bar
+
 # Cupper
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bc8c4e51-37ee-419d-ad4f-b378010ee546/deploy-status)](https://app.netlify.com/sites/cupper-hugo-theme/deploys)
@@ -6,19 +14,21 @@ An accessibility-friendly Hugo theme, ported from the [original Cupper](https://
 
 ## Table of contents
 
-- [Demo](#demo)
-- [Minimum Hugo version](#minimum-hugo-version)
-- [Installation](#installation)
-- [Updating](#updating)
-- [Run example site](#run-example-site)
-- [Configuration](#configuration)
-- [Logo](#logo)
-- [Favicons](#favicons)
-- [Shortcodes](#shortcodes)
-- [Syntax highlighting](#syntax-highlighting)
-- [Disable toc for a blog post](#disable-toc-for-a-blog-post)
-- [Getting help](#getting-help)
-- [Credits](#credits)
+- [Cupper](#cupper)
+  - [Table of contents](#table-of-contents)
+  - [Demo](#demo)
+  - [Minimum Hugo version](#minimum-hugo-version)
+  - [Installation](#installation)
+  - [Updating](#updating)
+  - [Run example site](#run-example-site)
+  - [Configuration](#configuration)
+  - [Logo](#logo)
+  - [Favicons](#favicons)
+  - [Shortcodes](#shortcodes)
+  - [Syntax highlighting](#syntax-highlighting)
+  - [Disable toc for a blog post](#disable-toc-for-a-blog-post)
+  - [Getting help](#getting-help)
+  - [Credits](#credits)
 
 ## Demo
 
