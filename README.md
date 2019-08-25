@@ -4,7 +4,6 @@ A fork of https://github.com/zwbetz-gh/cupper-hugo-theme with minor HTLM/CSS cha
 * Displays the latest posts on Home Page
 * Used `focus-visible` css to limit outline to keyboard
 * Added support for custom CSS through params.customCSS list
-* Moved footer to nav-bar
 
 # Cupper
 

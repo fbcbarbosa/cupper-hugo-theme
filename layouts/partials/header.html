@@ -4,14 +4,17 @@
       <!-- <a class="logo" href="/" aria-label="{{ .Site.Title }} home page">
         <img src="{{ "images/logo.svg" | absURL }}" alt="">
       </a> -->
-      <div><h2>{{ .Site.Title }}</h2></div>
+      <div>
+        <h2>{{ .Site.Title }}</h2>
+      </div>
       <p class="library-desc">
         {{ with .Site.Params.description }}
-          {{ . | markdownify }}
+        {{ . | markdownify }}
         {{ end }}
       </p>
     </div>
     {{ partial "nav.html" . }}
-    {{ partial "footer.html" . }}
+    <div class="social">
+    </div>
   </div>
 </header>

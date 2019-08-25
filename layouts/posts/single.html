@@ -9,12 +9,6 @@
     {{ .Title }}
   </h1>
 
-  <div class="date">
-    {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
-    {{ $publishDate := .PublishDate }}
-    {{ $publishDate.Format $dateFormat }}
-  </div>
-
   {{ with .Params.tags }}
   <div class="tags">
     <strong aria-hidden="true">Tags: </strong>
@@ -31,6 +25,10 @@
     </ul>
   </div>
   {{ end }}
+
+  <div class="date">
+    {{ .PublishDate.Format ($.Site.Params.dateFormat | default "Jan 2, 2006") }}
+  </div>
 
   {{ .Content }}
 </main>
