@@ -1,0 +1,36 @@
+<!--
+This file was copied from surajmandalcell 'potato-dark' theme (https://github.com/surajmandalcell/potato-dark/blob/f118ad117c204d07eaaf3c48b4abd67158ca4fda/layouts/partials/link.html)
+-->
+{{ if or ( .Site.Params.twitter ) ( .Site.Params.facebook ) ( .Site.Params.instagram ) ( .Site.Params.googleplus ) ( .Site.Params.github ) ( .Site.Params.gitlab ) ( .Site.Params.npm ) ( .Site.Params.codepen ) ( .Site.Params.dribbble ) ( .Site.Params.fivehundredpx ) ( .Site.Params.flickr ) ( .Site.Params.pinterest ) ( .Site.Params.tumblr ) ( .Site.Params.vimeo ) ( .Site.Params.youtube ) ( .Site.Params.linkedin ) }}
+{{ with .Site.Params.twitter }}
+<div class="c-links__item">
+    <a href="https://twitter.com/{{ . }}" target="_blank" class="c-links__link">
+        <svg viewBox="0 0 64 64" class="c-links__icon">
+            <title>twitter</title>
+            <use xlink:href="#icon-twitter"></use>
+        </svg>
+    </a>
+</div>
+{{ end }}
+{{ with .Site.Params.github }}
+<div class="c-links__item">
+    <a href="https://github.com/{{ . }}" target="_blank" class="c-links__link">
+        <svg viewBox="0 0 64 64" class="c-links__icon">
+            <title>github</title>
+            <use xlink:href="#icon-github"></use>
+        </svg>
+    </a>
+</div>
+{{ end }}
+{{ with .Site.Params.linkedin }}
+<div class="c-links__item">
+    <a href="https://linkedin.com/in/{{ . }}" target="_blank" class="c-links__link">
+        <svg viewBox="0 0 64 64" class="c-links__icon">
+            <title>linkedin</title>
+            <use xlink:href="#icon-linkedin"></use>
+        </svg>
+    </a>
+</div>
+
+{{ end }}
+{{ end }}

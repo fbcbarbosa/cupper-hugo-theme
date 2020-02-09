@@ -1,4 +1,5 @@
 <footer role="contentinfo">
+  {{ partial "link.html" . }}
   <div>
   {{ with .Site.Params.copyright }}
       {{ . | markdownify }}
