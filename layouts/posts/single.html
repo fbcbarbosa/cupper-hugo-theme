@@ -31,5 +31,15 @@
   </div>
 
   {{ .Content }}
+
+  <div class='pagination__row'>
+    <div class="pagination__left">{{with .NextInSection}}<a href={{.Permalink}} class="pagination__link">⬅️
+        {{.Title}}</a>{{end}}</div>
+  </div>
+  <div class='pagination__row'>
+    <div class="pagination__right">{{with .PrevInSection}}<a href={{.Permalink}} class="pagination__link">{{.Title}}
+        ➡️</a>{{end}}</div>
+  </div>
+
 </main>
 {{ end }}

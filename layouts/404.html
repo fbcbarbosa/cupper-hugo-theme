@@ -1,0 +1,10 @@
+{{ define "main"}}
+<main id="main">
+    <div class="notfound">
+        <h1 id="title" class="notfound">{{ $.Site.Params.notFoundWarning }}</a></h1>
+    </div>
+    <div class="notfound">
+        <h1 id="title" class="notfound"><a href="{{ "/" | relURL }}">{{ $.Site.Params.notFoundReturnMessage }}</a></h1>
+    </div>
+</main>
+{{ end }}
