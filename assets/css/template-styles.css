@@ -48,7 +48,8 @@ p + p {
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px dashed;
+  border-bottom-color: #4c4c4c;
 }
 
 abbr {
@@ -1265,4 +1266,13 @@ img[src$="#center"] {
 
 .c-links__link {
   border: none;
+}
+
+blockquote {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  border-left: 4px solid gray;
+  color: #4c4c4c;
+  position: relative;
 }
