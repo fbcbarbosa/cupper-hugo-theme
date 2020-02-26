@@ -1269,10 +1269,20 @@ img[src$="#center"] {
 }
 
 blockquote {
-  font-size: 1.1rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
   font-weight: 400;
   font-style: italic;
-  border-left: 4px solid gray;
-  color: #4c4c4c;
+  border-left: 5px solid gray;
+  color: #5e5e5e;
   position: relative;
+}
+
+hr {
+  width: 50%;
+  float: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-top: 1px solid #4c4c4c;
 }
