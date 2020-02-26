@@ -1,6 +1,7 @@
 {{ define "main" }}
-  <main id="main">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </main>
+<main id="main">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</main>
+{{ partial "i18nlist.html" . }}
 {{ end }}

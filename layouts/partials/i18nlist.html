@@ -1,10 +1,15 @@
 {{ if .IsTranslated }}
-<h4>{{ i18n "translations" }}</h4>
-<ul>
-    {{ range .Translations }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
-    </li>
-    {{ end }}
-</ul>
+{{ range .Translations }}
+{{ if eq .Lang "en" }}
+<p>
+    👉 <i>click <a href="{{ .Permalink }}">here</a> for the {{ .Language.LanguageName }} version of this
+        page.</i>
+</p>
+{{ end }}
+{{ if eq .Lang "pt" }}
+<p>
+    👉 <i>clique <a href="{{ .Permalink }}">aqui</a> para a versão em {{ .Language.LanguageName }} dessa página.</i>
+</p>
+{{ end }}
+{{ end }}
 {{ end }}
