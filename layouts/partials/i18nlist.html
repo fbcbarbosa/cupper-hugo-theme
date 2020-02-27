@@ -1,15 +1,18 @@
 {{ if .IsTranslated }}
 {{ range .Translations }}
 {{ if eq .Lang "en" }}
-<p>
-    👉 <i>click <a href="{{ .Permalink }}">here</a> for the {{ .Language.LanguageName }} version of this
-        page.</i>
+<hr>
+<p style="text-align:center">
+    👉 <i>click <a href="{{ .Permalink }}">here</a> for the {{ .Language.LanguageName }} version </i> 👈
 </p>
+<hr>
 {{ end }}
 {{ if eq .Lang "pt" }}
-<p>
-    👉 <i>clique <a href="{{ .Permalink }}">aqui</a> para a versão em {{ .Language.LanguageName }} dessa página.</i>
+<hr>
+<p style="text-align:center">
+    👉 <i>clique <a href="{{ .Permalink }}">aqui</a> para a versão em {{ .Language.LanguageName }} </i> 👈
 </p>
+<hr>
 {{ end }}
 {{ end }}
 {{ end }}
