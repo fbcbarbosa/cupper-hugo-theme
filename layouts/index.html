@@ -34,6 +34,11 @@
     </div>
     {{ end }} -->
 
+    <div class="title">
+      <h1>{{ .Title }}</h1>
+      {{ partial "i18nlist.html" . }}
+    </div>
+
     {{ .Content }}
 
     <!-- <div class='pagination__row'>
