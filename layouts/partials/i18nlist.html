@@ -1,18 +1,12 @@
 {{ if .IsTranslated }}
 {{ range .Translations }}
-{{ if eq .Lang "en" }}
-<hr>
-<p style="text-align:center">
-    👉 <i>click <a href="{{ .Permalink }}">here</a> for the {{ .Language.LanguageName }} version </i> 👈
-</p>
-<hr>
-{{ end }}
-{{ if eq .Lang "pt" }}
-<hr>
-<p style="text-align:center">
-    👉 <i>clique <a href="{{ .Permalink }}">aqui</a> para a versão em {{ .Language.LanguageName }} </i> 👈
-</p>
-<hr>
-{{ end }}
+<div class="i18nlist">
+    {{ if eq .Lang "en" }}
+    <p class="i18nlist"><a href="{{ .Permalink }}" class="i18nlist">🇬🇧</a></p>
+    {{ end }}
+    {{ if eq .Lang "pt" }}
+    <p class="i18nlist"><a href="{{ .Permalink }}" class="i18nlist">🇧🇷</a></p>
+    {{ end }}
+</div>
 {{ end }}
 {{ end }}

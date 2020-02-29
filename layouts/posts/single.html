@@ -1,8 +1,9 @@
 {{ define "main" }}
 <main id="main">
-  <h1>
-    {{ .Title }}
-  </h1>
+  <div class="title">
+    <h1>{{ .Title }}</h1>
+    {{ partial "i18nlist.html" . }}
+  </div>
 
   <!-- {{ with .Params.tags }}
   <div class="tags">

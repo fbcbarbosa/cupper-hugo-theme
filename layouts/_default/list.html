@@ -1,6 +1,9 @@
 {{ define "main" }}
 <main id="main">
-  <h1>{{ .Title }}</h1>
+  <div class="title">
+    <h1>{{ .Title }}</h1>
+    {{ partial "i18nlist.html" . }}
+  </div>
   <ul class="patterns-list">
     {{ range .Pages.ByPublishDate.Reverse }}
     <li>
@@ -13,6 +16,5 @@
     </li>
     {{ end }}
   </ul>
-  {{ partial "i18nlist.html" . }}
 </main>
 {{ end }}
