@@ -1175,7 +1175,7 @@ h1 svg {
 }
 
 #main h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #37474f;
 }
@@ -1296,10 +1296,10 @@ img[src$="#profile"] {
 blockquote {
   line-height: 1.5;
   font-size: 1.05rem;
-  font-weight: 400;
+  font-weight: 1200;
   font-style: italic;
   border-left: 5px solid gray;
-  color: #5e5e5e;
+  color: #4c4c4c;
   position: relative;
 }
 
