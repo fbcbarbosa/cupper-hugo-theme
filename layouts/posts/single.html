@@ -26,6 +26,8 @@
     {{ .PublishDate.Format ($.Site.Params.dateFormat | default "Jan 2, 2006") }}
   </div>
 
+  <hr class="single">
+
   {{ .Content }}
 
   <!-- <div class='pagination__row'>
